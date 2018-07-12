@@ -109,33 +109,33 @@ cat << EOF > DevServer_connection.json
     },
     "orderers": {
         "orderer.example.com": {
-            "url": "grpc://<PEER-1-IP>:7050"
+            "url": "grpc://18.233.168.139:7050"
         }
     },
     "peers": {
         "peer0.org1.example.com": {
-            "url": "grpc://<PEER-1-IP>:7051",
-            "eventUrl": "grpc://<PEER-1-IP>:7053"
+            "url": "grpc://18.233.168.139:7051",
+            "eventUrl": "grpc://18.233.168.139:7053"
         },
         "peer1.org1.example.com": {
-            "url": "grpc://<PEER-1-IP>:8051",
-            "eventUrl": "grpc://<PEER-1-IP>:8053"
+            "url": "grpc://18.233.168.139:8051",
+            "eventUrl": "grpc://18.233.168.139:8053"
         },
         "peer2.org1.example.com": {
-            "url": "grpc://<PEER-2-IP>:9051",
-            "eventUrl": "grpc://<PEER-2-IP>:9053"
+            "url": "grpc://54.173.220.90:9051",
+            "eventUrl": "grpc://54.173.220.90:9053"
         }
     },
     "certificateAuthorities": {
         "ca.org1.example.com": {
-            "url": "http://<PEER-1-IP>:7054",
+            "url": "http://18.233.168.139:7054",
             "caName": "ca.org1.example.com"
         }
     }
 }
 EOF
 
-PRIVATE_KEY="${DIR}"/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/<KEYSTORE>
+PRIVATE_KEY="${DIR}"/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/2f90966c3db591de99a6630453a70d67bcda434352c18ae3b3ed6fd2f9a1c372_sk
 CERT="${DIR}"/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
 
 if [ "${NOIMPORT}" != "true" ]; then
