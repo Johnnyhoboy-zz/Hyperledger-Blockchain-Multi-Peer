@@ -109,26 +109,26 @@ cat << EOF > DevServer_connection.json
     },
     "orderers": {
         "orderer.example.com": {
-            "url": "grpc://34.204.8.119:7050"
+            "url": "grpc://10.0.1.196:7050"
         }
     },
     "peers": {
         "peer0.org1.example.com": {
-            "url": "grpc://34.204.8.119:7051",
-            "eventUrl": "grpc://34.204.8.119:7053"
+            "url": "grpc://10.0.1.196:7051",
+            "eventUrl": "grpc://10.0.1.196:7053"
         },
         "peer1.org1.example.com": {
-            "url": "grpc://34.204.8.119:8051",
-            "eventUrl": "grpc://34.204.8.119:8053"
+            "url": "grpc://10.0.1.196:8051",
+            "eventUrl": "grpc://10.0.1.196:8053"
         },
         "peer2.org1.example.com": {
-            "url": "grpc://54.208.252.117:9051",
-            "eventUrl": "grpc://54.208.252.117:9053"
+            "url": "grpc://10.0.3.218:9051",
+            "eventUrl": "grpc://10.0.3.218:9053"
         }
     },
     "certificateAuthorities": {
         "ca.org1.example.com": {
-            "url": "http://34.204.8.119:7054",
+            "url": "http://10.0.1.196:7054",
             "caName": "ca.org1.example.com"
         }
     }
